@@ -1,0 +1,11 @@
+button style : cursor on vert
+header + footer change color
+logo pas droit
+icone twitter et facebook
+label formulaire insc
+
+include html
+window pop up
+
+
+responsive ??

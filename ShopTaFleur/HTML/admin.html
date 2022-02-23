@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap" rel="stylesheet">
+    <title>Administration</title>
+</head>
+
+<body>
+
+    <!-- include header -->
+    <header class="container">
+        <nav class="header">
+           <a class="title_site" href="catalogue.html">
+              <h1 class="title_site">Shoptafleur</h1>
+           </a>
+           <!-- logo pas droit -->
+           <img id="logo" src="../RESSOURCES/logo_white.svg" alt="logo" width="100px">
+           <ul id="navigation">
+              <!--if vide/non-->
+              <li class="navigation">
+                 <a class="navigation" href="panier.html">
+                    <img id="logo_panier" src="../RESSOURCES/icon_panier.svg" alt="logo_panier" width="30px">
+                 </a>
+              </li>
+              <!--if logged in or not-->
+              <li class="navigation">
+                 <a class="navigation" href="login.html">
+                    <button class="navigation">S'identifier</button>
+                 </a>
+              </li>
+              </a>
+           </ul>
+        </nav>
+     </header>
+
+
+    <div class="container">
+        <div class="upload">
+            <!-- error color with font -->
+            <h1 class="upload">Ajouter un produit :</h1>
+            <form class="upload" id="admin" action="catalogue.html">
+                <div class="table">
+                    <label class="upload" for="upload_title">Titre</label>
+                    <input type="text" class="upload" name="upload_title"><br>
+                </div>
+                <div class="table">
+                    <label class="upload" for="upload_img">Image</label>
+                    <input type="file" id="upload_img" name="upload_img"><br>
+                </div>
+                <div class="table">
+                    <label class="upload" id="alt">Image "alt"</label>
+                    <input type="text" class="upload" id="upload_alt" name="upload_alt" name="alt"><br>
+                </div>
+                <div class="table">
+                    <label class="upload" id="upload_desc_name" for="upload_desc">Description</label>
+                    <textarea id="upload_desc" name="upload_desc" form="admin"></textarea>
+                    <!-- <input type="text" class="upload" id="upload_desc" name="upload_desc"><br> -->
+                </div>
+                <div class="table">
+                    <label class="upload" id="upload_price_name" for="upload_price">Prix</label>
+                    <input type="number" class="upload" id="upload_price" name="upload_price"><br>
+                </div>
+                <div class="table">
+                    <label class="upload" for="upload_type">Catégorie</label>
+                    <input type="text" class="upload" name="upload_type"><br>
+                </div>
+                <!-- Reduction ? -->
+
+                <!-- différents type ? -->
+
+                <!-- plusieurs éléments dans description ? -->
+
+                <!-- <label for=""></label>
+                <input type="" id="" name=""> -->
+            </form>
+            <div class="upload_submit">
+                <a class="upload" href="admin.html">
+                    <input type="submit" id="upload_submit" form="admin" value="Ajouter">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- include footer -->
+    <footer class="container">
+        <div class="corner">
+            <img class="corner" id="left" src="../RESSOURCES/Footer_left.png" alt="plant_left" height="200vw">
+            <img class="corner" id="right" src="../RESSOURCES/Footer_right.png" alt="plant_right" height="200vw">
+        </div>
+
+        <div class="footer_nav">
+            <a class="footer_nav" href="https://twitter.com/fleures_les" target="_blank">
+                <img class="footer_nav" id="logo_twitter" src="../RESSOURCES/icon_twitter.svg" alt="twitter_logo"
+                    width="35px">
+            </a>
+            <a class="footer_nav" href="https://fr-fr.facebook.com" target="_blank">
+                <img class="footer_nav" id="logo_facebook" src="../RESSOURCES/icon_facebook.svg" alt="facebook_logo"
+                    width="35px">
+            </a>
+        </div>
+        <p id="copyright">© ShopTaFleur | 2021 </p>
+    </footer>
+</body>
+
+</html>

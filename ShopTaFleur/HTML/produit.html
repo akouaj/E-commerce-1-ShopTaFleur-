@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap" rel="stylesheet">
+    <title>Produit</title>
+</head>
+
+<body>
+    <header class="container">
+        <nav class="header">
+            <a class="title_site" href="catalogue.html">
+                <h1 class="title_site">Shoptafleur</h1>
+            </a>
+            <!-- logo pas droit -->
+            <img id="logo" src="../RESSOURCES/logo_white.svg" alt="logo" width="100px">
+            <ul id="navigation">
+                <!--if vide/non-->
+                <li class="navigation">
+                    <a class="navigation" href="panier.html">
+                        <img id="logo_panier" src="../RESSOURCES/icon_panier.svg" alt="logo_panier" width="30px">
+                    </a>
+                </li>
+                <!--if logged in or not-->
+                <li class="navigation">
+                    <a class="navigation" href="login.html">
+                        <button class="navigation">S'identifier</button>
+                    </a>
+                </li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <div class="produit">
+            <div class="image">
+                <img src="../RESSOURCES/anthurium_rose.jpg" alt="athurium_rose" width="100px">
+            </div>
+            <div class="description">
+                <h1 class="description">titre</h1>
+                <div class="description">
+                    <p id="desc">description</p>
+                </div>
+                <!--dropdown catégorie de pot-->
+                <p id="type">catégorie &#8960;</p>
+                <!--as function : max =stock valeur =var-->
+                <label for="quantity">Quantité</label>
+                <select class="description" id="quantity" name="quantity">
+                    <option class="quant" value="1">1</option>
+                    <option class="quant" value="2">2</option>
+                    <option class="quant" value="3">3</option>
+                    <option class="quant" value="4">4</option>
+                    <option class="quant" value="5">5</option>
+                </select>
+                <!--stock en couleur diff /rouge si faible quant-->
+                <p id="stock">stock</p>
+                <!--prix var categorie*quantité-->
+                <p id="prix">14,99 &euro;</p>
+                <!--add *quant to panier redirect catalogue/panier-->
+                <input class="description" type="submit" value="Ajouter au panier">
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="container">
+        <div class="corner">
+            <img class="corner" id="left" src="../RESSOURCES/Footer_left.png" alt="plant_left" height="200vw">
+            <img class="corner" id="right" src="../RESSOURCES/Footer_right.png" alt="plant_right" height="200vw">
+        </div>
+
+        <div class="footer_nav">
+            <a class="footer_nav" href="https://twitter.com/fleures_les" target="_blank">
+                <img class="footer_nav" id="logo_twitter" src="../RESSOURCES/icon_twitter.svg" alt="twitter_logo"
+                    width="35px">
+            </a>
+            <a class="footer_nav" href="https://fr-fr.facebook.com" target="_blank">
+                <img class="footer_nav" id="logo_facebook" src="../RESSOURCES/icon_facebook.svg" alt="facebook_logo"
+                    width="35px">
+            </a>
+        </div>
+        <p id="copyright">© ShopTaFleur | 2021 </p>
+    </footer>
+</body>
+
+</html>

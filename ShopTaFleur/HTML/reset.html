@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap" rel="stylesheet">
+    <title>Reset</title>
+</head>
+
+<!--include header as function-->
+
+<body>
+    <header class="container">
+        <nav class="header">
+            <a class="title_site" href="catalogue.html">
+                <h1 class="title_site">Shoptafleur</h1>
+            </a>
+            <!-- logo pas droit -->
+            <img id="logo" src="../RESSOURCES/logo_white.svg" alt="logo" width="100px">
+            <ul id="navigation">
+                <!--if vide/non-->
+                <li class="navigation">
+                    <a class="navigation" href="panier.html">
+                        <img id="logo_panier" src="../RESSOURCES/icon_panier.svg" alt="logo_panier" width="30px">
+                    </a>
+                </li>
+                <!--if logged in or not-->
+                <li class="navigation">
+                    <a class="navigation" href="login.html">
+                        <button class="navigation">S'identifier</button>
+                    </a>
+                </li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="res">
+            <h1 class="res">Veuillez renseigner votre adresse e-mail afin de recevoir votre nouveau mot de passe.</h1>
+            <form class="res" action="login.html">
+                <input type="email" class="res" placeholder="Email">
+                <input type="submit" id="res_button" value="Réinitialiser">
+            </form>
+        </div>
+    </div>
+
+    <footer class="container">
+        <div class="corner">
+            <img class="corner" id="left" src="../RESSOURCES/Footer_left.png" alt="plant_left" height="200vw">
+            <img class="corner" id="right" src="../RESSOURCES/Footer_right.png" alt="plant_right" height="200vw">
+        </div>
+
+        <div class="footer_nav">
+            <a class="footer_nav" href="https://twitter.com/fleures_les" target="_blank">
+                <img class="footer_nav" id="logo_twitter" src="../RESSOURCES/icon_twitter.svg" alt="twitter_logo"
+                    width="35px">
+            </a>
+            <a class="footer_nav" href="https://fr-fr.facebook.com" target="_blank">
+                <img class="footer_nav" id="logo_facebook" src="../RESSOURCES/icon_facebook.svg" alt="facebook_logo"
+                    width="35px">
+            </a>
+        </div>
+        <p id="copyright">© ShopTaFleur | 2021 </p>
+    </footer>
+</body>
+
+<!--include footer as function-->
+
+</html>
